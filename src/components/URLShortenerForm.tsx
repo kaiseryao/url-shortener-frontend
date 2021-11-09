@@ -1,12 +1,12 @@
-/*import axios from 'axios';
-import { useState } from 'react';*/
+import axios from 'axios';
+import { useState } from 'react';
 import { Icon } from "@iconify/react";
 
 function URLShortenerForm() {
   return (
-    <div className="min-w-screen min-h-screen bg-gray-800 flex items-center justify-center px-5 py-5">
+    <div className="flex items-center justify-center min-h-screen px-5 py-5 bg-gray-800 min-w-screen">
       <div
-        className="w-full mx-auto rounded-xl bg-gray-100 shadow-lg p-10 text-gray-800 relative overflow-hidden resize-x min-w-80 max-w-3xl"
+        className="relative w-full max-w-3xl p-10 mx-auto overflow-hidden text-gray-800 bg-gray-100 shadow-lg resize-x rounded-xl min-w-80"
         x-data="app()"
         x-init="generatePassword()"
       >
@@ -14,21 +14,21 @@ function URLShortenerForm() {
           <input
             type="text"
             id="password"
-            className="w-full pl-3 pr-10 py-2 border-2 border-gray-200 rounded-xl hover:border-gray-300 focus:outline-none focus:border-blue-500 transition-colors"
+            className="w-full py-2 pl-3 pr-10 transition-colors border-2 border-gray-200 rounded-xl hover:border-gray-300 focus:outline-none focus:border-blue-500"
             placeholder="Enter your URL"
           />
-          <button className="block w-26 h-7 text-center text-sm leading-0 absolute top-2 right-5 text-gray-400 focus:outline-none hover:text-gray-900 transition-colors">
+          <button className="absolute block text-sm text-center text-gray-400 transition-colors w-26 h-7 leading-0 top-2 right-5 focus:outline-none hover:text-gray-900">
             Shorten <Icon icon="akar-icons:arrow-right" />
           </button>
         </div>
-
-        <div className="absolute top-0 left-0 w-full h-2 flex">
-          <div className="h-2 bg-red-500 flex-1"></div>
-          <div className="h-2 bg-yellow-500 flex-1"></div>
-          <div className="h-2 bg-yellow-300 flex-1"></div>
-          <div className="h-2 bg-green-500 flex-1"></div>
-          <div className="h-2 bg-blue-500 flex-1"></div>
-          <div className="h-2 bg-purple-700 flex-1"></div>
+ 
+        <div className="absolute top-0 left-0 flex w-full h-2">
+          <div className="flex-1 h-2 bg-red-500"></div>
+          <div className="flex-1 h-2 bg-yellow-500"></div>
+          <div className="flex-1 h-2 bg-yellow-300"></div>
+          <div className="flex-1 h-2 bg-green-500"></div>
+          <div className="flex-1 h-2 bg-blue-500"></div>
+          <div className="flex-1 h-2 bg-purple-700"></div>
         </div>
       </div>
     </div>
