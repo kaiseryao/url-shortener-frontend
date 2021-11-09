@@ -20,11 +20,21 @@ function URLShortenerForm() {
           <button className="absolute inline-flex items-center text-sm text-center text-gray-400 transition-colors w-26 h-7 leading-0 top-2 right-5 focus:outline-none hover:text-gray-900">
             Shorten <Icon icon="akar-icons:arrow-right" />
           </button>
+
+          <button className="absolute inline-flex items-center hidden text-sm text-center text-gray-400 transition-colors w-26 h-7 leading-0 top-2 right-5 focus:outline-none hover:text-gray-900">
+            Copy <Icon icon="akar-icons:copy" />
+          </button>
+
+        </div>
+
+        <div className="relative mt-1">
+          <p className="text-sm text-center text-gray-400 transition-colors">By clicking on "Shorten" you accept our TOS and Privacy Policy.</p>
         </div>
  
         <div className="absolute top-0 left-0 flex w-full h-2">
           <div className="flex-1 h-2 bg-red-500"></div>
         </div>
+
       </div>
     </div>
   );
